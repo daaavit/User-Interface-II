@@ -28,7 +28,7 @@ body {
     padding: 0%;
     margin: 0%;
     max-width: 100%;
-   
+    
 }
 
 html {
@@ -40,6 +40,7 @@ body {
     line-height: 1.5;
     color: black;
     background-color: white
+  
 }
 
 /*dont foget font family*/
@@ -56,6 +57,7 @@ h1 {
 .navcontainer {
     display: flex;
     background-color: darkgray;
+    width: 100%;
 }
 
 .navbar {
@@ -81,16 +83,17 @@ h1 {
 
 /* middle content starts here */
 
-
 .middlecontent {
     display: flex;
     width: 100%;
-    
-    
 }
 
 .mypicture {
-    width: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .containersinfo {
@@ -101,37 +104,32 @@ h1 {
     align-items: flex-start;
     margin-top: 15%;
     margin-left: 3%;
-
-   
 }
 
 h2 {
     font-size: 5rem;
-    
 }
 
 p {
     width: 30%;
     align-items: center;
 }
+
 button {
     padding: 1% 2%;
     background-color: black;
     color: white;
 }
 
-
 .randompics {
-
     display: flex;
     justify-content: space-between;
-   
 }
 
-.randompics2{
+.randompics2 {
     display: flex;
     justify-content: space-between;
-   margin-top: 5%;
+    margin-top: 5%;
 }
 
 .random {
@@ -139,7 +137,6 @@ button {
     width: 400px;
     padding: 10%;
 }
-
 
 .pone {
     display: flex;
@@ -156,4 +153,178 @@ button {
     padding: 3%;
     flex-direction: column;
     margin-top: 5%;
+}
+
+/*Mobile Design starts here */
+
+@media (max-width: 800px) {
+    .navcontainer {
+        justify-content: center;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .myname {
+        width: 70%;
+        align-content: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 8rem;
+    }
+    .navbar {
+        display: inline-block;
+        width: 25%;
+    }
+    .navbar a {
+        display: flex;
+        border: 1px solid black;
+        text-decoration: none;
+        padding: 0% 5%;
+        flex-direction: column;
+    }
+    .middlecontent {
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+    }
+    .mypicture {
+        width: 70%;
+        height: 23vh;
+    }
+    .middlecontent h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .middlecontent p {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    div.buttonone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+    .randompicsfather {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        line-height: 1.4rem;
+        margin-top: 13%;
+    }
+    .pic {
+        width: 35%;
+        height: 20vh;
+    }
+    .random {
+        width: 100%;
+        height: 20vh;
+    }
+    .footer h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+    .imtired {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    .footer {
+        width: 70%;
+    }
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .navcontainer {
+        justify-content: center;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .myname {
+        width: 70%;
+        align-content: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+    .navbar {
+        display: inline-block;
+        width: 25%;
+    }
+    .navbar a {
+        display: flex;
+        border: 1px solid black;
+        text-decoration: none;
+        padding: 0% 5%;
+        flex-direction: column;
+    }
+    .middlecontent {
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+    }
+    .mypicture {
+        width: 70%;
+        height: 23vh;
+    }
+    .middlecontent h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .middlecontent p {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    div.buttonone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+    .randompicsfather {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        line-height: 1.4rem;
+        margin-top: 13%;
+    }
+    .pic {
+        width: 35%;
+        height: 20vh;
+    }
+    .random {
+        width: 100%;
+        height: 20vh;
+    }
+    .footer h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+    .imtired {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    .footer {
+        width: 70%;
+    }
 }
